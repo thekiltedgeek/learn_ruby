@@ -26,3 +26,19 @@ def multiply(array)
     #end
     return result
 end
+
+def power(x,y)
+    return x**y
+end
+
+def factorial(number)
+    result = 1
+    if number > 0
+        i = 1
+        while i <= number
+            result = result * i
+            i += 1
+        end
+    end
+    return result
+end

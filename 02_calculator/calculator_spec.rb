@@ -95,9 +95,19 @@ end
 
 # http://en.wikipedia.org/wiki/Factorial
 describe "#factorial" do
-  it "computes the factorial of 0"
-  it "computes the factorial of 1"
-  it "computes the factorial of 2"
-  it "computes the factorial of 5"
-  it "computes the factorial of 10"
+  it "computes the factorial of 0" do
+      expect(factorial(0)) == 1
+  end
+  it "computes the factorial of 1" do
+      expect(factorial(1)) == 1
+  end
+  it "computes the factorial of 2" do
+      expect(factorial(2)) == 2
+  end
+  it "computes the factorial of 5" do
+     expect(factorial(5))  == 120
+  end
+  it "computes the factorial of 10" do
+      expect(factorial(10)) == 3628800
+  end
 end
