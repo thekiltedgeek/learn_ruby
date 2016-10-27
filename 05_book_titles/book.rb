@@ -15,10 +15,10 @@ class Book
         words = text.split(' ')
         words.each.with_index do |word,i|
             if not (no_cap_words.include?(word))
-                words[i] = words[i].capitalize
+                words[i].capitalize!
             end
         end
-        words[0] = words[0].capitalize
+        words[0].capitalize!
         return words.join(' ')
     end
 end
