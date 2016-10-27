@@ -10,20 +10,14 @@ end
 def sum(array)
     result = 0
     if array.length > 0
-        array.each do |item|
-            result += item
-        end
+        array.each {|item| result += item}
     end
     return result
 end
 
 def multiply(array)
     result = 1
-    #if array.length > 1
-        array.each do |item|
-            result = result * item
-        end
-    #end
+        array.each {|item| result = result * item}
     return result
 end
 

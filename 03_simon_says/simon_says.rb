@@ -24,10 +24,10 @@ def titleize(text)
     words = text.split(" ")
     words.each.with_index do |word, i|
         if (i == 0 || i == words.length-1)
-            words[i] = word.capitalize
+            words[i].capitalize!
         else
             if word.length > 4
-                words[i] = word.capitalize
+                words[i].capitalize!
             end
         end
     end
