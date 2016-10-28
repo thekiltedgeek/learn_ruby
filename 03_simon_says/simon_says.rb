@@ -25,10 +25,8 @@ def titleize(text)
     words.each.with_index do |word, i|
         if (i == 0 || i == words.length-1)
             words[i].capitalize!
-        else
-            if word.length > 4
+        elsif word.length > 4
                 words[i].capitalize!
-            end
         end
     end
     

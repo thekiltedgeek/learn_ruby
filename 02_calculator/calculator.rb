@@ -9,15 +9,13 @@ end
 
 def sum(array)
     result = 0
-    if array.length > 0
-        array.each {|item| result += item}
-    end
+    array.each {|item| result += item} if array.length > 0
     return result
 end
 
 def multiply(array)
     result = 1
-        array.each {|item| result = result * item}
+    array.each {|item| result = result * item}
     return result
 end
 
@@ -27,12 +25,8 @@ end
 
 def factorial(number)
     result = 1
-    if number > 0
-        i = 1
-        while i <= number
-            result = result * i
-            i += 1
-        end
+    for i in result..number
+        result = result * i
     end
     return result
 end

@@ -14,9 +14,9 @@ class Book
         no_cap_words =["a","an","the","at","by","for","in","of","on","to","up","and","as","but","or","nor"]
         words = text.split(' ')
         words.each.with_index do |word,i|
-            if not (no_cap_words.include?(word))
-                words[i].capitalize!
-            end
+            #if not (no_cap_words.include?(word))
+                words[i].capitalize! unless no_cap_words.include?(word)
+            $end
         end
         words[0].capitalize!
         return words.join(' ')
